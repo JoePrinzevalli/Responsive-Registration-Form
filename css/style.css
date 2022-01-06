@@ -1,8 +1,130 @@
 /* Base Styles */
+ * {
+        font-family: 'Merriweather', serif;
+}
+h1 {
+    text-align: center;
+    background-color: #444c57 ;
+    color: white;
+    margin: 0 auto;
+    padding: 20px 0;
+    font-size: 20px;
+}
+h2,
+.begin-p {
+    text-align: center;
+}
+h2 {
+    font-size: 20px;
+    color: #444c57;
+    margin-top: 25px;
+}
+.begin-p {
+    font-size: 12px;
+    margin: 12px 15px 30px;
+    color: lightgray;
+}
+legend {
+    color: #444c57;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-top: 5px double #444c57; 
+    padding-top: 15px;
+    padding-right: 30%;
+}
+
+fieldset {
+    border: none;
+}
+label {
+    color: #9fb2c5;
+}
+::placeholder
+ {
+    color: lightgray;
+    text-align: right;
+    margin-right: 20px;
+    font-size: 12px;
+    font-style: italic;
+}
+select {
+    color:lightgray;
+}
+option:not(:first-of-type) {
+    color: black;
+}
+.newsletter {
+    margin-bottom: 0;
+    border-top: 5px solid #444c57;
+    padding-right: 55%;
+}
+.topic-p {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.radio {
+    margin-bottom: 20px;
+}
+footer p {
+    text-align: center;
+    font-size: 12px;
+    color: lightgray;
+    font-style: italic;
+    margin-bottom: 100px;
+}
 
 
 
-/* Flexbox Styles*/
+
+/* Block Styles*/
+#other,
+.text input,
+select,
+button {
+    border: none;
+    border-radius: 5px;
+    width: 100%; 
+}
+#other,
+.text input,
+select {
+    background-color: rgba(245, 245, 247) ;
+}
+.text input,
+select
+ {
+    display: block;
+    margin: 15px auto;
+    height: 45px;
+}
+#zip {
+    width: 50%;
+    margin-left: 0;
+    height: 55px;
+}
+.checkbox input,
+.radio input {
+    display: inline-block;
+    width: 10%;
+    text-align: right;
+    margin: 15px 0;
+}
+#other {
+    margin-top: 15px;
+    height: 100px;
+}
+button {
+    display: block;
+    margin: 20px auto 10px auto;
+    background-color: rgb(63, 191, 191);
+    color: white;
+    height: 50px;
+    font-weight: bold;
+}
+
+
+
 
 
 
@@ -16,3 +138,9 @@
 
 
 /* Media Queries */
+
+@media screen and (min-width: 768px) {
+
+
+
+}
