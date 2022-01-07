@@ -3,9 +3,19 @@
  * {
         font-family: 'Merriweather', serif;
 }
+hr {
+    width: 90%;
+    background-color: #444c57;
+}
+.thick {
+    height: 5px;
+}
+.thin {
+    height: 3px;
+}
 h1 {
     text-align: center;
-    background-color: #444c57 ;
+    background-color: #444c57;
     color: white;
     margin: 0 auto;
     padding: 20px 0;
@@ -30,7 +40,6 @@ legend {
     font-weight: 700;
     font-size: 20px;
     margin-bottom: 20px;
-    border-top: 5px double #444c57; 
     padding-top: 15px;
     padding-right: 30%;
 }
@@ -59,6 +68,9 @@ select:focus,
     font-size: 12px;
     font-style: italic;
 }
+textarea::placeholder {
+    text-align: left;
+}
 select {
     color:lightgray;
 }
@@ -67,7 +79,6 @@ option:not(:first-of-type) {
 }
 .newsletter {
     margin-bottom: 0;
-    border-top: 5px solid #444c57;
     padding-right: 55%;
 }
 .topic-p {
@@ -89,8 +100,17 @@ footer p {
 }
 
 
-/* Block Styles*/
-
+/* Flexbox Styles*/
+.text {
+    display: flex;
+    flex-direction: column;
+}
+.text input,
+select
+ {
+    height: 45px;
+    margin: 15px auto;
+}
 #other,
 .text input,
 select,
@@ -107,28 +127,33 @@ select {
 .text input,
 select
  {
-    display: block;
-    margin: 15px auto;
     height: 45px;
+    margin: 15px auto;
 }
+
 #zip {
     width: 50%;
     margin-left: 0;
     height: 55px;
 }
+.container {
+    display: flex;
+    flex-direction: column;
+}
 .checkbox input,
 .radio input {
-    display: inline-block;
-    width: 10%;
-    text-align: right;
-    margin: 15px 0;
+    order: -1;
+    margin: 15px auto 0;
+}
+.end-flex {
+    display: flex;
+    flex-direction: column;
 }
 #other {
     margin-top: 15px;
     height: 100px;
 }
 button {
-    display: block;
     margin: 20px auto 10px auto;
     background-color: rgb(63, 191, 191);
     color: white;
@@ -152,6 +177,9 @@ h2 {
 legend {
     padding-top: 40px;
     }
+#zip {
+    width: 25%;
+}
 
 
 }

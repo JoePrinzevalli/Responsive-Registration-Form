@@ -21,10 +21,12 @@
         <p class="begin-p">Get the latest news on how your code is doing right in your inbox</p>
             <!-- How to add horizontal line here?? -->
 
+            <hr class="thick">
+            <hr class="thin">
 
         <form>
             <fieldset>
-
+            
                 <legend>Contact Information</legend>
                 <div class="text">
                     <label for="name">Full Name</label>
@@ -95,7 +97,9 @@
                     <input type="text" id="zip" name="user_zip_code" placeholder="Required" required="required">
                 </div>
             </fieldset>
+            <hr class="thin">
             <fieldset>
+                <div class="container">
                     <legend class="newsletter">Newsletter</legend>
                         <p class="topic-p">Select the newsletters you would like to recieve</p>
                     <div class="checkbox">
@@ -106,7 +110,6 @@
                         <input type="checkbox" id="java-news" name="user_news" value="javascript-news">
                         <label for="java-news">Javascript News</label>
                     </div>
-
                         <p class="topic-p">Newsletter format</p>
                     <div class="radio">
                         <input type="radio" id="html-format" name="user_format" value="html-format">
@@ -114,11 +117,13 @@
                         <input type="radio" id="plain-format" name="user_format" value="plain-format">
                         <label for="plain-format">Plain text</label>
                     </div>
-
+                </div>
+                    <div class="end-flex">
                         <label for="other">Other topics you'd like to hear about</label>
-                        <textarea id="other" name="user_other"></textarea>
+                        <textarea id="other" name="user_other" placeholder="Type something here!"></textarea>
 
-                        <button type="submit" name="user_sign_up">Sign Up</button>       
+                        <button type="submit" name="user_sign_up">Sign Up</button>  
+                    </div>     
             </fieldset>
         </form>
     </main>
