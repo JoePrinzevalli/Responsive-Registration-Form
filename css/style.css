@@ -1,7 +1,7 @@
 /* Base Styles */
 
  * {
-        font-family: 'Merriweather', serif;
+     font-family: 'Merriweather', serif;
 }
 hr {
     width: 90%;
@@ -39,9 +39,9 @@ legend {
     color: #444c57;
     font-weight: 700;
     font-size: 20px;
-    margin-bottom: 20px;
     padding-top: 15px;
     padding-right: 30%;
+    padding-bottom: 15px;
 }
 fieldset {
     border: none;
@@ -82,8 +82,8 @@ option:not(:first-of-type) {
     padding-right: 55%;
 }
 .topic-p {
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-top: 25px;
+    margin-bottom: 0;
 }
 .radio {
     margin-bottom: 20px;
@@ -101,15 +101,17 @@ footer p {
 
 
 /* Flexbox Styles*/
-.text {
+
+.flex-name {
     display: flex;
     flex-direction: column;
 }
 .text input,
-select
+select,
+#zip
  {
     height: 45px;
-    margin: 15px auto;
+    margin: 15px 0;
 }
 #other,
 .text input,
@@ -122,34 +124,29 @@ button {
 #other,
 .text input,
 select {
-    background-color: rgba(245, 245, 247) ;
-}
-.text input,
-select
- {
-    height: 45px;
-    margin: 15px auto;
+    background-color: rgba(245, 245, 247);
 }
 
 #zip {
     width: 50%;
-    margin-left: 0;
-    height: 55px;
 }
 .container {
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
 .checkbox input,
 .radio input {
     order: -1;
-    margin: 15px auto 0;
+    margin: 20px 10px 0 auto;
+    flex: 1;
 }
 .end-flex {
     display: flex;
     flex-direction: column;
+    margin-top: 13px;
 }
-#other {
+#other,button {
     margin-top: 15px;
     height: 100px;
 }
@@ -169,7 +166,7 @@ button {
 .main-wrapper {
     margin-left: auto;
     margin-right: auto;
-    width: 45%;
+    width: 55%;
     }
 h2 {
     margin-top: 50px;
@@ -177,9 +174,28 @@ h2 {
 legend {
     padding-top: 40px;
     }
-#zip {
-    width: 25%;
+hr {
+    width: 100%;
+    }
+fieldset {
+    padding: 0;
 }
+.text {
+    margin-top: 25px;
+}
+.flex-name {
+    flex-direction: row;
+    }
+.flex-name label {
+    margin-top: 30px;
+    }
+.text label {
+    width: 40%;
+    }
+    
+   #zip {
+       width: 25%;
+   }
 
 
 }
